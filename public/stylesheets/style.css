@@ -1,9 +1,9 @@
 html,body {
-        background: url('/images/white_grey_background.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover; /*for webKit*/
-        -moz-background-size: cover; /*Mozilla*/
-        -o-background-size: cover; /*opera*/
-        background-size: cover; /*generic*/
+  /*background: url('/images/white_grey_background.jpg') no-repeat center center fixed;*/
+  -webkit-background-size: cover; /*for webKit*/
+  -moz-background-size: cover; /*Mozilla*/
+  -o-background-size: cover; /*opera*/
+  background-size: cover; /*generic*/
 }
 body {
   padding-top: 10px;
@@ -13,15 +13,23 @@ body {
 }
 
 #content > div {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #avatar img {
-  border: 2px dotted #545565;
+  border: 2px solid #eee;
+}
+
+header {
+  border-bottom: 1px dotted #eee;
 }
 
 footer {
-  margin-top: 30px;
+  border-top: 1px dotted #eee;
+  margin-top: 10px;
+  padding-top: 10px;
   font-size: 0.8em;
   line-height: 0.5em;
+  color: #777;
+  -webkit-font-smoothing: antialiased;
 }
