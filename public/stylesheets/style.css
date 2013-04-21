@@ -1,0 +1,19 @@
+body {
+  padding-top: 10px;
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+#content > div {
+  margin-top: 20px;
+}
+
+#avatar img {
+  border: 2px dotted #545565;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.8em;
+}

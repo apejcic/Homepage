@@ -1,0 +1,19 @@
+{
+  "name": "apejcic",
+  "version": "0.0.1-4",
+  "scripts": {
+    "start": "coffee app.coffee"
+  },
+  "dependencies": {
+    "express": "3.2.x",
+    "jade": "0.29.x",
+    "stylus": "0.32.x",
+    "nib": "0.9.x",
+    "markdown": "0.4.x",
+    "node-mandrill": "1.0.x"
+  },
+  "subdomain": "apejcic",
+  "engines": {
+    "node": "0.8.x"
+  }
+}

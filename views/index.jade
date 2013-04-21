@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  header 
+    h1= title
+  
+  section#content(ng-controller='ContactCtrl') 
+    div#avatar
+      img(ng-hide='showMessageForm', src='http://www.gravatar.com/avatar/88dc71e34b5159b80da2e27988127242?s=250')
+    div#contact(ng-show='showMessageForm')
+      div(class='alert alert-success', ng-show='messageSucceeded')
+        | Message sent, thank you.
+      div(class='alert alert-error', ng-show='messageError')
+        | Error sending, oooh noo.
+
+      form(name='messageform', class='well form-horizontal')
+        fieldset
+          div(class='control-group')
+            textarea(class='input-xlarge', ng-model='message', placeholder='Leave me a message', rows='3', required, ng-disabled="messageSent")
+          div(class='control-group')
+            input(class='input-xlarge', ng-model='from_email', type='email', placeholder='Your email', required, ng-disabled="messageSent")
+          div(class='control-group')
+            button(class='submit', class='btn btn-primary', ng-click='send()', ng-disabled="!messageform.$valid || messageSent") Send me a message
+            button(class='button', class='btn', ng-click='toggleMessageForm()') Close
+
+    div#social
+      p
+        a(ng-click='toggleMessageForm()', href='#') contact
+        | &nbsp;|&nbsp;
+        a(href='http://www.linkedin.com/pub/aleksander-pej%C4%8Di%C4%87/16/898/3a7') linkedin
+        | &nbsp;|&nbsp;
+        a(href='https://github.com/apejcic') github
+        | &nbsp;|&nbsp;
+        a(href='https://twitter.com/a_pejcic') twitter
+        | &nbsp;|&nbsp;
+        a(href='http://www.facebook.com/alekspejcic') facebook
+
+
+  footer
+    p Made with: 
+      a(href='http://nodejs.org/') node.js
+      | , 
+      a(href='http://coffeescript.org/') CoffeeScript
+      | , 
+      a(href='http://angularjs.org/') angularjs
+      | , 
+      a(href='http://jade-lang.com/') jade
