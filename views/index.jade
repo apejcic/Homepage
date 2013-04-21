@@ -21,6 +21,7 @@ block content
             input(class='input-xlarge', ng-model='from_email', type='email', placeholder='Your email', required, ng-disabled="messageSent")
           div(class='control-group')
             button(class='submit', class='btn btn-primary', ng-click='send()', ng-disabled="!messageform.$valid || messageSent") Send me a message
+            | 
             button(class='button', class='btn', ng-click='toggleMessageForm()') Close
 
     div#social
