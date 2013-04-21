@@ -12,6 +12,10 @@ body {
   margin: 0 auto;
 }
 
+textarea {
+  resize: none; 
+}
+
 #content > div {
   margin-top: 10px;
 }

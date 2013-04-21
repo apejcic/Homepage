@@ -16,9 +16,9 @@ block content
       form(name='messageform', class='well form-horizontal')
         fieldset
           div(class='control-group')
-            textarea(class='input-xlarge', ng-model='message', placeholder='Leave me a message', rows='3', required, ng-disabled="messageSent")
+            textarea(class='input-large', ng-model='message', placeholder='Leave me a message', rows='3', required, ng-disabled="messageSent")
           div(class='control-group')
-            input(class='input-xlarge', ng-model='from_email', type='email', placeholder='Your email', required, ng-disabled="messageSent")
+            input(class='input-large', ng-model='from_email', type='email', placeholder='Your email', required, ng-disabled="messageSent")
           div(class='control-group')
             button(class='submit', class='btn btn-primary', ng-click='send()', ng-disabled="!messageform.$valid || messageSent") Send me a message
             | 
@@ -43,7 +43,7 @@ block content
     p Made with: 
       a(href='http://nodejs.org/') node.js
       | , 
-      a(href='http://expressjs.com/') express 
+      a(href='http://expressjs.com/') express
       | , 
       a(href='http://coffeescript.org/') CoffeeScript
       | , 
