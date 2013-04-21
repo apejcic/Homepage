@@ -1,3 +1,10 @@
+html,body {
+        background: url('/images/white_grey_background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover; /*for webKit*/
+        -moz-background-size: cover; /*Mozilla*/
+        -o-background-size: cover; /*opera*/
+        background-size: cover; /*generic*/
+}
 body {
   padding-top: 10px;
   text-align: center;

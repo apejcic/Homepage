@@ -1,6 +1,6 @@
 {
   "name": "apejcic",
-  "version": "0.0.1-5",
+  "version": "0.0.1-7",
   "scripts": {
     "start": "coffee app.coffee"
   },
