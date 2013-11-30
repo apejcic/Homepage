@@ -8,6 +8,6 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
+nohup.out
 # Node
 node_modules/

@@ -7,7 +7,7 @@ index = require("./routes/index")
 app = express()
 
 # all environments
-app.set 'port', process.env.PORT || 3000
+app.set 'port', process.env.PORT || 80
 app.set 'views', __dirname + '/views'
 app.set 'view engine', 'jade'
 app.use express.favicon(path.join(__dirname, 'public/images/favicon.ico'))
@@ -15,7 +15,7 @@ app.use express.logger('dev')
 app.use express.bodyParser()
 app.use express.methodOverride()
 app.use app.router
-app.use express.static(path.join(__dirname, 'public'), { maxAge: 86400000 })
+app.use express.static(path.join(__dirname, 'public'), { maxAge: 3600 })
 
 # development only
 app.use express.errorHandler()  if "development" is app.get("env")

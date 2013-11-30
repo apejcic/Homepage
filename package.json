@@ -2,7 +2,7 @@
   "name": "apejcic",
   "version": "0.0.1-11",
   "scripts": {
-    "start": "coffee app.coffee"
+    "start": "authbind --deep node ./node_modules/nodemon/nodemon.js app-wrapper.js"
   },
   "dependencies": {
     "express": "3.2.x",
@@ -10,10 +10,13 @@
     "stylus": "0.32.x",
     "nib": "0.9.x",
     "markdown": "0.4.x",
-    "node-mandrill": "1.0.x"
+    "node-mandrill": "1.0.x",
+    "coffee-script": "~1.6.3",
+    "nodemon": "~0.7.10",
+    "emailjs": "~0.3.6"
   },
   "subdomain": "apejcic",
   "engines": {
-    "node": "0.8.x"
+    "node": "0.10.x"
   }
 }
